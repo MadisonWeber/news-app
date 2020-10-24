@@ -1,0 +1,106 @@
+
+
+
+.card{
+    max-width: 340px;
+    margin-bottom: 5px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 4px;
+    background-color: white;
+    transform: translateX(-150px) scale(.2);
+    opacity: .1;
+    animation: cardAnimation .3s ease-out 0s 1 normal forwards;
+    overflow:hidden;
+    
+}
+
+@keyframes cardAnimation {
+    from{ transform: translateX(-150px) scale(.2); opacity: .1;}
+    to {transform: translateX(0px) scale(1); opacity: 1;}
+}
+
+
+.card img{
+    border-top-right-radius:4px;
+    border-top-left-radius:4px;
+}
+
+
+.card-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: left;
+    justify-content: space-around;
+    
+}
+
+.card-btn{
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    width: 40%;
+    border-radius: 4px;
+    outline-width: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+}
+
+.arrowIcon{
+    vertical-align: middle;
+}
+
+
+.card-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.card-top-container{
+    align-self: flex-end;
+    margin-right: 12px;
+}
+
+.card-top-container small{
+    font-size: 12px;
+}
+
+.card-content-network{
+    color: rgb(105,105,105);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.card-content-network{
+    margin-right: 12px;
+    align-self: flex-end;
+}
+
+
+.card-content-text{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    
+}
+
+.card-content-title{
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.date{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+}

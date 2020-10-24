@@ -1,0 +1,19 @@
+.error-div-container{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:white;
+    margin: auto auto;
+    border-radius: 6px;
+    border-left: 6px solid tomato;
+
+}
+
+h2{
+    color: tomato;
+    font-family: 'Lato', sans-serif;
+    padding: 3rem;
+    
+}
