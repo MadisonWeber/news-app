@@ -89,8 +89,8 @@ function App() {
         <Header />
         <div className="app-container">
         <div className = 'sidebar' > <Sidebar/></div>
-          {error || articles.length === 0 ? <Error /> : (
-          loading ? <Loader /> : (
+          {error  ? <Error /> : (
+          loading || articles.length === 0 ? <Loader /> : (
           <div className = "card-container">
               {articles.map( (article, id) =>
               <Article key = {id} article = {article}/>
